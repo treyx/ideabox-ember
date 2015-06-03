@@ -1,3 +1,12 @@
 <h3> These are your ideas: </h3>
 
+<section id="ideas">
+  {{#each model as |idea|}}
+    <div class='idea'>
+      <h4>{{idea.title}}</h4>
+      <p>{{idea.body}}</p>
+    </div>
+  {{/each}}
+</section>
+
 {{outlet}}
